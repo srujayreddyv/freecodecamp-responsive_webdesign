@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <div>
+      <header>
+        <h1 id="title" class="title">Sleep Survey Form</h1>
+        <p id="description" class="description">
+          Please fill out this form with the required information.
+        </p>
+      </header>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name* : </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="pls enter your name"
+            required=""
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email* : </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="pls enter your email"
+            required=""
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age: <span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="21"
+            max="80"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+
+        <div class="form-group">
+          <p>
+            Think about a typical night, how long does it take you to fall
+            asleep?*
+          </p>
+          <select id="dropdown" name="role" class="form-control" required="">
+            <option disabled="" selected="" value="">--select--</option>
+            <option value="less15">less than 15 min</option>
+            <option value="less30">between 15 to 30 min</option>
+            <option value="less45">between 30 to 45 min</option>
+            <option value="less60">between 45 to 60 min</option>
+            <option value="less90">more than 1 hour</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Think about a typical night, How would you rate your quality of
+            sleep?*
+          </p>
+          <label>
+            <input
+              name="sleep-quality"
+              value="excellent"
+              type="radio"
+              class="input-radio"
+              checked=""
+            />Excellent</label
+          >
+          <label>
+            <input
+              name="sleep-quality"
+              value="good"
+              type="radio"
+              class="input-radio"
+            />Good</label
+          >
+
+          <label
+            ><input
+              name="sleep-quality"
+              value="average"
+              type="radio"
+              class="input-radio"
+            />Average</label
+          >
+
+          <label>
+            <input
+              name="sleep-quality"
+              value="bad"
+              type="radio"
+              class="input-radio"
+            />Bad</label
+          >
+
+          <label
+            ><input
+              name="sleep-quality"
+              value="very-bad"
+              type="radio"
+              class="input-radio"
+            />Very Bad</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>
+            Thinking about the past month, What all aspects of your life were
+            effected by sleep?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="concentration"
+              type="checkbox"
+              class="input-checkbox"
+            />Concentration</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="energy"
+              type="checkbox"
+              class="input-checkbox"
+            />Energy</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="mood"
+              type="checkbox"
+              class="input-checkbox"
+            />Mood</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="productivity"
+              type="checkbox"
+              class="input-checkbox"
+            />Productivity</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="relationships"
+              type="checkbox"
+              class="input-checkbox"
+            />Relationships</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="ability"
+              type="checkbox"
+              class="input-checkbox"
+            />Ability to stay awake</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any comments in specific?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="pls enter your comments here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
