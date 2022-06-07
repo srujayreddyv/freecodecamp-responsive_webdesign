@@ -9,4 +9,5 @@ These projects are made for the freeCodeCamp Responsive Web Design Certification
 3. Product landing page
 4. Technical documentation page 
 5. Personal portfolio
-6. </br>
+
+</br>
