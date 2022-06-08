@@ -1,0 +1,33 @@
+#main{ 
+  background-color: #99e6e6;
+  text-align: justify;
+  margin: 25px 25px;
+  padding: 10px;
+} 
+#title {
+  color: #17202A;
+  fontsize: 64px;
+  text-align: center;
+}
+#quote {
+text-align: center;
+font-weight: bold;
+font-style: italic;
+}
+#img-div{
+background-color: #ebfafa;
+}
+#image {
+max-width: 100%;
+width: 100%;
+display: block;
+height: auto;
+}
+#img-caption{
+text-align: center;
+margin: auto;
+}
+#side {
+text-align: center;  
+}
+
